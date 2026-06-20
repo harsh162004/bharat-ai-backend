@@ -136,6 +136,7 @@ def _get_du_context(query: str) -> str:
     lines = [
         f"[Official DU Info] Dibrugarh University — Founded {DU_QUICK_FACTS['founded']}, "
         f"Location: {DU_QUICK_FACTS['location']}, NAAC: {DU_QUICK_FACTS['naac']}, "
+        f"Vice Chancellor: {DU_QUICK_FACTS['vc']}, "
         f"Website: {DU_QUICK_FACTS['website']}",
     ]
     dept = _detect_du_department(query)
