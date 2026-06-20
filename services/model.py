@@ -8,10 +8,10 @@ import requests
 import warnings
 warnings.filterwarnings("ignore")
 
-from config import ENGINE_A_KEY, ENGINE_B_KEY, ENGINE_D_KEY, OLLAMA_URL, OLLAMA_MODEL
+from config import ENGINE_A_KEY, ENGINE_C_KEY, ENGINE_D_KEY, OLLAMA_URL, OLLAMA_MODEL
 
 _ea = ENGINE_A_KEY   # Groq
-_ec = ENGINE_B_KEY   # OpenRouter key
+_ec = ENGINE_C_KEY   # OpenRouter key  # OpenRouter key
 _ee = ENGINE_D_KEY   # GLM
 _ou = OLLAMA_URL
 _om = OLLAMA_MODEL
