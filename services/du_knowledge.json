@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://dibru.ac.in/about",
+    "title": "About Dibrugarh University",
+    "content": "Dibrugarh University was established in 1965. It is located in Dibrugarh, Assam."
+  },
+  {
+    "url": "https://dibru.ac.in/academics/departments",
+    "title": "Academic Departments",
+    "content": "Departments under Dibrugarh University: Computer Science, Commerce, Physics, Chemistry, Mathematics, Botany, Zoology, Economics, English, Assamese."
+  },
+  {
+    "url": "https://dibru.ac.in/ccsa",
+    "title": "Centre for Computer Science and Applications",
+    "content": "CCSA (Centre for Computer Science and Applications) is a center under Dibrugarh University. It offers BCA, MCA, and PGDCA programs. It does NOT offer BSc or MSc Computer Science."
+  }
+]

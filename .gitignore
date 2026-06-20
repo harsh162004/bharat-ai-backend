@@ -1,0 +1,20 @@
+﻿# environment files
+.env
+.env.txt
+.env.local
+
+# python
+venv/
+venv311/
+__pycache__/
+*.pyc
+
+# node
+node_modules/
+package-lock.json
+
+# misc
+.vs/
+.dist/
+backend_tree.txt
+*.code-search

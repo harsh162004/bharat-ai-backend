@@ -1,0 +1,37 @@
+# ============================================================
+# Bharat.ai v4.0 — Python Requirements (Cleaned)
+# BCA 6th Semester | Dibrugarh University
+# Built by Harsh Raut & Shanu Das
+# ============================================================
+
+# ─── Web Framework ─────────────────────────────────────────
+flask
+flask-cors
+
+# ─── API Clients ───────────────────────────────────────────
+groq
+openai
+python-dotenv
+
+# ─── Web Search ────────────────────────────────────────────
+requests
+beautifulsoup4
+wikipedia
+duckduckgo-search
+trafilatura
+newspaper3k
+
+# ─── Voice ─────────────────────────────────────────────────
+pyttsx3
+SpeechRecognition
+
+# ─── Removed (was causing NumPy/Python version conflicts) ──
+# numpy          ← REMOVED (was crashing on Python 3.11)
+# faiss-cpu      ← REMOVED (PDF RAG - feature removed)
+# sentence-transformers ← REMOVED (PDF RAG - feature removed)
+# torch          ← REMOVED (not needed anymore)
+# scikit-learn   ← REMOVED (not needed anymore)
+# scipy          ← REMOVED (not needed anymore)
+# pymupdf        ← REMOVED (PDF parsing - feature removed)
+# transformers   ← REMOVED (not needed anymore)
+# huggingface-hub ← REMOVED (not needed anymore)
