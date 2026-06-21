@@ -137,7 +137,16 @@ REALTIME_KEYWORDS = [
     "governor of", "chief minister of", "cm of",
     # ── ADD THESE ──
     "who is dr", "who is prof",
-    "about dibrugarh", "about assam",
+    "about dibrugarh", "about assam","mla",
+"mp",
+"minister",
+"cabinet minister",
+"member of parliament",
+"member of legislative assembly",
+"mayor",
+"commissioner",
+"vice chancellor",
+"governor"
 ]
 
 LOCAL_KEYWORDS = [
