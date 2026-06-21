@@ -18,6 +18,7 @@ ENGINE_D_KEY = os.getenv("ENGINE_D_KEY", "")   # GLM
 OLLAMA_URL   = os.getenv("OLLAMA_URL",   "http://localhost:11434/api/chat")
 OLLAMA_MODEL = os.getenv("OLLAMA_MODEL", "mistral")
 NEWSAPI_KEY = os.getenv("NEWSAPI_KEY", "")
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY", "")
 # ── App Settings ─────────────────────────────────────────────
 DEBUG   = False
 PORT    = 5000

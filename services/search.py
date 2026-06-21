@@ -8,7 +8,10 @@ import json
 import requests
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
+from tavily import TavilyClient
+from config import TAVILY_API_KEY
 
+tavily = TavilyClient(api_key=TAVILY_API_KEY)
 # ── Config ────────────────────────────────────────────────────
 from config import NEWSAPI_KEY
 
@@ -213,10 +216,35 @@ def ddg_search(query: str, max_results: int = MAX_DDG_RESULTS, du_dept_url: str 
                 print(f"   [{i+1}] {r['title'][:60]}...")
             return results
     except Exception as e:
-        print(f"❌ DuckDuckGo search FAILED: {e}")
+            print(f"❌ DuckDuckGo search FAILED: {e}")
+            print("🔄 Falling back to Tavily...")
+            return tavily_search(query, max_results)
+
+def tavily_search(query: str, max_results: int = 5):
+    try:
+        print("🔥 USING TAVILY SEARCH")
+        print("🔥 USING TAVILY SEARCH")
+        result = tavily.search(
+            query=query,
+            search_depth="basic",
+            max_results=max_results
+        )
+
+        results = []
+
+        for r in result.get("results", []):
+            results.append({
+                "title": r.get("title", ""),
+                "snippet": r.get("content", ""),
+                "url": r.get("url", "")
+            })
+
+        print(f"✅ Tavily found {len(results)} results")
+        return results
+
+    except Exception as e:
+        print(f"❌ Tavily FAILED: {e}")
         return []
-
-
 # ── Wikipedia Search ──────────────────────────────────────────
 def wiki_search(query: str) -> str:
     def _direct_lookup(search_term: str) -> str:
