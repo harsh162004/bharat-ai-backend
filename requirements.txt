@@ -12,3 +12,4 @@ newspaper3k
 pyttsx3
 SpeechRecognition
 gunicorn
+tavily-python
